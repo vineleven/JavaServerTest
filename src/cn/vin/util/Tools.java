@@ -74,6 +74,7 @@ public class Tools {
 			fileName = "index.html";
 		}
 		
+		Tools.debugf( "getFile: %s", fileName );
 		try {
 			File file = new File( Config.SERVER_FILE_ROOT + fileName );
 			if( !file.exists() ){
